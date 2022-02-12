@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOP_LAB1.MyDictionary;
+using OOP_LAB1.MyList;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,7 @@ namespace OOP_LAB1
     {
         static void Main(string[] args)
         {
-            MyList<int> myList = new MyList<int>();
+            IMyList<int> myList = new MyList<int>();
             myList.add(2);
             myList.add(3);
             myList.add(4);
@@ -20,7 +22,21 @@ namespace OOP_LAB1
             Console.WriteLine(myList.get(0));
             myList.remove(0);
             Console.WriteLine(myList.size());
+
+            IMyDictionary<int, int> myDictionary = new MyDictionary<int, int>();
+            myDictionary.Insert(1, 1);
+            myDictionary.Insert(2, 2);
+            myDictionary.Insert(3, 3);
+            myDictionary.Insert(4, 4);
+            myDictionary.Insert(5, 5);
+            Console.WriteLine(myDictionary.Size());
+            Console.WriteLine(myDictionary.Get(1));
+            Console.WriteLine(myDictionary.Get(5));
+            Console.WriteLine(myDictionary.Get(4));
+            Console.WriteLine(myDictionary.Get(2));
+            Console.WriteLine(myDictionary.Get(3));
             Console.ReadKey();
+
         }
     }
 }

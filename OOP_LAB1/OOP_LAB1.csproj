@@ -43,7 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyList.cs" />
+    <Compile Include="MyClass\MyClass.cs" />
+    <Compile Include="MyDictionary\IMyDictionary.cs" />
+    <Compile Include="MyDictionary\MyDictionary.cs" />
+    <Compile Include="MyDictionary\Node.cs" />
+    <Compile Include="MyList\IMyList.cs" />
+    <Compile Include="MyList\MyList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
