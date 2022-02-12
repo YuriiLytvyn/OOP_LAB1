@@ -62,5 +62,7 @@ namespace OOP_LAB1
             Array.Copy(array, newArray, newLeght);
             array = newArray;
         }
+
+
     }
 }

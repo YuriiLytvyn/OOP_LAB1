@@ -47,6 +47,7 @@
     <Compile Include="MyDictionary\IMyDictionary.cs" />
     <Compile Include="MyDictionary\MyDictionary.cs" />
     <Compile Include="MyDictionary\Node.cs" />
+    <Compile Include="MyList\GetArray.cs" />
     <Compile Include="MyList\IMyList.cs" />
     <Compile Include="MyList\MyList.cs" />
     <Compile Include="Program.cs" />

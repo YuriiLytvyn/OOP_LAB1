@@ -18,11 +18,20 @@ namespace OOP_LAB1
             myList.add(4);
             myList.add(5);
             myList.add(6);
+            /*
             Console.WriteLine(myList.size());
             Console.WriteLine(myList.get(0));
             myList.remove(0);
             Console.WriteLine(myList.size());
+            */
 
+            int[] array = GetArray<int>.GetAttay((MyList<int>)myList);
+            foreach (int i in array)
+            {
+                Console.WriteLine(i);
+            }
+
+            /*
             IMyDictionary<int, int> myDictionary = new MyDictionary<int, int>();
             myDictionary.Insert(1, 1);
             myDictionary.Insert(2, 2);
@@ -35,8 +44,10 @@ namespace OOP_LAB1
             Console.WriteLine(myDictionary.Get(4));
             Console.WriteLine(myDictionary.Get(2));
             Console.WriteLine(myDictionary.Get(3));
-            Console.ReadKey();
+            */
 
+            Console.ReadKey();
+            
         }
     }
 }
